@@ -13,6 +13,7 @@ const FILTERS: { label: string; value: Filter }[] = [
   { label: 'Tous', value: 'tous' },
   { label: 'Web', value: 'web' },
   { label: 'Automatisation', value: 'automatisation' },
+  { label: 'Mobile', value: 'mobile' },
 ];
 
 const GRADIENT_TEXT: React.CSSProperties = {

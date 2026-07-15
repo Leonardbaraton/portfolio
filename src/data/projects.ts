@@ -14,7 +14,7 @@ export const projects: Project[] = [
     title: 'SpotMe',
     description: 'Contenu à venir.',
     stack: [],
-    category: 'web',
+    category: 'mobile',
   },
   {
     slug: 'guestly',
@@ -28,7 +28,7 @@ export const projects: Project[] = [
     title: 'Cockpit',
     description: 'Contenu à venir.',
     stack: [],
-    category: 'web',
+    category: 'mobile',
   },
   {
     slug: 'area',
