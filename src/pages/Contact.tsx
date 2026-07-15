@@ -88,7 +88,7 @@ export function Contact() {
                 value={value}
                 onChange={(e) => onChange(e.target.value)}
                 placeholder={placeholder}
-                className="w-full rounded-lg px-4 py-3 text-slate-200 text-sm outline-none focus:ring-2 focus:ring-indigo-500/40 transition-all placeholder:text-slate-600"
+                className="w-full rounded-lg px-4 py-3 text-slate-200 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500/60 transition-all placeholder:text-slate-600"
                 style={INPUT_STYLE}
               />
             </div>
@@ -108,7 +108,7 @@ export function Contact() {
               value={form.message}
               onChange={(e) => setForm((f) => ({ ...f, message: e.target.value }))}
               placeholder="Décrivez votre projet..."
-              className="w-full rounded-lg px-4 py-3 text-slate-200 text-sm outline-none focus:ring-2 focus:ring-indigo-500/40 transition-all resize-none placeholder:text-slate-600"
+              className="w-full rounded-lg px-4 py-3 text-slate-200 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500/60 transition-all resize-none placeholder:text-slate-600"
               style={INPUT_STYLE}
             />
           </div>

@@ -36,8 +36,10 @@ export function useParticles() {
 
     function resize() {
       if (!canvas) return;
-      canvas.width = canvas.offsetWidth;
-      canvas.height = canvas.offsetHeight;
+      const dpr = window.devicePixelRatio || 1;
+      canvas.width = canvas.offsetWidth * dpr;
+      canvas.height = canvas.offsetHeight * dpr;
+      ctx!.setTransform(dpr, 0, 0, dpr, 0, 0);
     }
 
     function init() {
@@ -112,9 +114,10 @@ export function useParticles() {
     }
 
     function onResize() {
+      cancelAnimationFrame(animId);
       resize();
       init();
-      if (!reducedMotion) draw();
+      draw();
     }
 
     resize();

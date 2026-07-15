@@ -47,8 +47,8 @@ export function About() {
           production.
         </p>
         <p className="text-slate-400 leading-relaxed">
-          Formé à Epitech Nantes, j'ai renforcé mes compétences par un stage de 6 mois chez
-          ONITI, où j'ai livré des sites clients et développé des outils internes.
+          Formé à Epitech Nantes, j'ai renforcé mes compétences lors d'une mission de 6 mois
+          chez ONITI, où j'ai livré des sites clients et développé des outils internes.
         </p>
       </div>
 
