@@ -165,8 +165,9 @@ export function Home() {
               Formé à Epitech. Livraison garantie.
             </h2>
             <p className="text-slate-400 text-sm leading-relaxed max-w-lg">
-              Développeur freelance basé à Nantes. Je construis des applications web pour des
-              clients qui veulent du concret — de la première ligne de code au déploiement.
+              Développeur freelance basé à Nantes, je construis des applications web, des applications mobiles pour des
+              clients qui veulent du concret — de la première ligne de code au déploiement en
+              production. Je fais aussi des refontes de sites web, des automatisations pour rendre les entreprises plus efficaces et des sites d'ecommerce.
             </p>
           </div>
           <Link

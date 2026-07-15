@@ -42,13 +42,33 @@ export function About() {
       {/* Bio */}
       <div className="mb-16 space-y-4">
         <p className="text-slate-300 text-lg leading-relaxed">
-          Développeur freelance basé à Nantes, je construis des applications web pour des
+          Développeur freelance basé à Nantes, je construis des applications web, des applications mobiles pour des
           clients qui veulent du concret — de la première ligne de code au déploiement en
-          production.
+          production. Je fais aussi des refontes de sites web, des automatisations pour rendre les entreprises plus efficaces et des sites d'ecommerce.
         </p>
         <p className="text-slate-400 leading-relaxed">
-          Formé à Epitech Nantes, j'ai renforcé mes compétences lors d'une mission de 6 mois
-          chez ONITI, où j'ai livré des sites clients et développé des outils internes.
+          Développeur freelance | Sites vitrine, e-commerce & applications sur-mesure
+          <br />
+          <br />
+          Développeur full-stack formé à Epitech, classée 1ère école du digital et du numérique en France (Le Figaro Étudiant, 2026), je conçois et livre des sites vitrine, boutiques e-commerce et applications sur-mesure pour indépendants, associations et PME.
+          <br />
+          <br />
+          Ce que je fais concrètement :
+          <br />
+          <br />
+          ✅ Sites vitrine responsive et optimisés SEO
+          <br />
+          ✅ Boutiques e-commerce (Shopify, WooCommerce ou sur-mesure)
+          <br />
+          ✅ Applications web et MVP pour startups
+          <br />
+          ✅ Automatisations et outils métier sur-mesure
+          <br />
+          <br />
+          J'ai développé et lancé mes propres produits SaaS (SpotMe, une app mobile pour trouver des partenaires de sport, et Guestly, un outil de gestion d'événements pour associations) — je sais donc penser un projet comme un vrai produit, pas juste comme une liste de specs à cocher.
+          <br />
+          <br />
+          Réactif, à l'écoute, et transparent sur les délais. Premier échange gratuit pour cadrer votre besoin.
         </p>
       </div>
 
@@ -68,6 +88,15 @@ export function About() {
               ],
             },
             {
+              period: 'Avril 2026 - Aout 2026',
+              periodColor: 'text-indigo-400',
+              title: 'Stagiaire Développeur — Epitech, Nantes',
+              items: [
+                "Création d'une application web de gestion d'invités dans les évènements pour les associations",
+                'Présentation de projets, formation des collaborateurs',
+              ],
+            },
+            {
               period: '2022 – Présent',
               periodColor: 'text-cyan-400',
               title: 'Formé à Epitech Nantes',
@@ -75,6 +104,14 @@ export function About() {
                 "Programme Grande École (Expert en Technologies de l'Information) — en cours",
               ],
             },
+            {
+              period: 'Janvier 2026 - Présent',
+              periodColor: 'text-cyan-400',
+              title: 'Spotme',
+              items: [
+                "Application mobile communautaire pour sportifs, permettant de trouver des partenaires d'entraînement dans sa salle de sport",
+              ],
+            }
           ].map((entry, i) => (
             <motion.div
               key={entry.title}
