@@ -12,22 +12,22 @@ export const projects: Project[] = [
   {
     slug: 'spotme',
     title: 'SpotMe',
-    description: 'Contenu à venir.',
-    stack: [],
+    description: "SpotMe est une application mobile fitness communautaire (style réseau social local) qui connecte les sportifs dans leurs salles de sport. L'idée centrale : faciliter le co-entraînement entre sportifs du même salle de sport, comme un BlaBlaCar du sport.",
+    stack: ['Firebase', 'NestJS', 'Prisma', 'PostgreSQL', 'Docker'],
     category: 'mobile',
   },
   {
     slug: 'guestly',
     title: 'Guestly',
-    description: 'Contenu à venir.',
-    stack: [],
+    description: "Guestly est une application SaaS de gestion d'invités et d'événements, conçue pour les associations et les BDE (Bureaux Des Étudiants). Elle centralise les formulaires d'inscription, les invitations, les relances et le suivi des réponses, remplaçant les tableurs Excel par une plateforme intuitive et collaborative.",
+    stack: ['Stripe', 'Mailjet', 'React', 'Vite', 'PostgreSQL', 'Docker'],
     category: 'web',
   },
   {
     slug: 'cockpit',
     title: 'Cockpit',
-    description: 'Contenu à venir.',
-    stack: [],
+    description: "Cockpit est une application mobile de gestion de projets, de sport et de vie personnelle. Elle a pour objectif de devenir le cockpit de votre vie personnelle, sportive et professionnelle, en centralisant toutes vos tâches, objectifs et activités dans une seule interface intuitive. ",
+    stack: ['SwiftUI'],
     category: 'mobile',
   },
   {
