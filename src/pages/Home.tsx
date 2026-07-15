@@ -25,7 +25,7 @@ export function Home() {
           className="absolute inset-0 pointer-events-none"
           style={{
             background:
-              'radial-gradient(ellipse 70% 50% at 50% 0%, rgba(129,140,248,0.08) 0%, transparent 70%)',
+              'radial-gradient(ellipse 70% 50% at 50% 0%, rgba(129,140,248,0.14) 0%, transparent 70%)',
           }}
         />
 

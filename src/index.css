@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  background: #050510;
+  background: #0d0d20;
   color: #f1f5f9;
   font-family: 'Space Grotesk', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -34,7 +34,7 @@ body {
   width: 5px;
 }
 ::-webkit-scrollbar-track {
-  background: #050510;
+  background: #0d0d20;
 }
 ::-webkit-scrollbar-thumb {
   background: rgba(129, 140, 248, 0.3);

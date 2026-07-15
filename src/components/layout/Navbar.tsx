@@ -16,7 +16,7 @@ export function Navbar() {
     <header
       className="fixed top-0 inset-x-0 z-50"
       style={{
-        background: 'rgba(5, 5, 16, 0.85)',
+        background: 'rgba(13, 13, 32, 0.88)',
         backdropFilter: 'blur(12px)',
         WebkitBackdropFilter: 'blur(12px)',
         borderBottom: '1px solid rgba(255, 255, 255, 0.06)',
