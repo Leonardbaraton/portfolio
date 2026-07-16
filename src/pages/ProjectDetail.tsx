@@ -198,9 +198,9 @@ export function ProjectSpotme() {
     </div>
   );
 }
-function BrowserMockup({ src, alt }: { src: string; alt: string }) {
+function BrowserMockup({ src, alt, maxWidth, maxHeight }: { src: string; alt: string; maxWidth?: number; maxHeight?: number }) {
   return (
-    <div className="relative">
+    <div className="relative" style={maxWidth ? { maxWidth } : undefined}>
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
@@ -226,7 +226,7 @@ function BrowserMockup({ src, alt }: { src: string; alt: string }) {
           <span className="w-2.5 h-2.5 rounded-full bg-yellow-500/50" />
           <span className="w-2.5 h-2.5 rounded-full bg-green-500/50" />
         </div>
-        <img src={src} alt={alt} className="w-full object-cover object-top" />
+        <img src={src} alt={alt} className="w-full object-cover object-top" style={maxHeight ? { maxHeight } : undefined} />
       </div>
     </div>
   );
@@ -511,6 +511,8 @@ const AREA_FEATURES = [
     points: ['Interface drag-and-drop', 'Déclencheurs configurables', 'Actions paramétrables par service'],
     image: '/areaScreenshot/actionPage.png',
     reverse: false,
+    maxWidth: 360 as number | undefined,
+    maxHeight: 333 as number | undefined,
   },
   {
     tag: 'Connecteurs',
@@ -519,6 +521,8 @@ const AREA_FEATURES = [
     points: ['OAuth sécurisé par service', 'Discord, GitHub, Gmail intégrés', 'Ajout de connecteurs sans redéploiement'],
     image: '/areaScreenshot/connectorPage.png',
     reverse: true,
+    maxWidth: undefined as number | undefined,
+    maxHeight: undefined as number | undefined,
   },
   {
     tag: 'Dashboard',
@@ -527,6 +531,8 @@ const AREA_FEATURES = [
     points: ['Workers Docker isolés', 'Logs d\'exécution par automation', 'Activation / désactivation instantanée'],
     image: '/areaScreenshot/homePage.png',
     reverse: false,
+    maxWidth: undefined as number | undefined,
+    maxHeight: undefined as number | undefined,
   },
 ];
 
@@ -591,7 +597,7 @@ export function ProjectArea() {
                 transition={{ duration: 0.8, ease: 'easeOut' }}
                 className="w-full lg:w-1/2 flex-shrink-0"
               >
-                <BrowserMockup src={feat.image} alt={feat.tag} />
+                <BrowserMockup src={feat.image} alt={feat.tag} maxWidth={feat.maxWidth} maxHeight={feat.maxHeight} />
               </motion.div>
 
               <motion.div
