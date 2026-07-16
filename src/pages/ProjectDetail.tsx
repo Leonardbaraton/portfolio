@@ -179,7 +179,7 @@ export function ProjectSpotme() {
 
         {/* Feature rows */}
         <div className="flex flex-col gap-28 mb-32">
-          {FEATURES.map((feat, i) => (
+          {FEATURES.map((feat) => (
             <div
               key={feat.tag}
               className={`flex flex-col ${feat.reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center gap-12 lg:gap-20`}
