@@ -46,7 +46,8 @@ export function About() {
       </h1>
 
       {/* Bio */}
-      <div className="mb-16 space-y-4">
+      <div className="mb-16 flex flex-col md:flex-row gap-10 items-start">
+        <div className="space-y-4 flex-1">
         <p className="text-slate-300 text-lg leading-relaxed">
           Développeur freelance basé à Nantes, je construis des applications web, des applications mobiles pour des
           clients qui veulent du concret — de la première ligne de code au déploiement en
@@ -83,6 +84,25 @@ export function About() {
         <p className="text-slate-500 text-sm mt-3">
           Réactif, transparent sur les délais. Premier échange gratuit.
         </p>
+        </div>
+
+        <div className="flex-shrink-0 flex justify-center md:justify-end">
+          <div
+            className="relative rounded-2xl overflow-hidden"
+            style={{
+              width: 200,
+              height: 240,
+              border: '1px solid rgba(129,140,248,0.2)',
+              boxShadow: '0 0 40px rgba(129,140,248,0.08)',
+            }}
+          >
+            <img
+              src="/profilPicture.png"
+              alt="Léonard Baraton"
+              className="w-full h-full object-cover object-top"
+            />
+          </div>
+        </div>
       </div>
 
       {/* Timeline */}
