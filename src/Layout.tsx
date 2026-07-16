@@ -1,4 +1,4 @@
-import { Outlet, useLocation } from 'react-router-dom';
+import { Outlet, useLocation, ScrollRestoration } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Navbar } from './components/layout/Navbar';
 import { Footer } from './components/layout/Footer';
@@ -7,7 +7,7 @@ export function Layout() {
   const location = useLocation();
 
   return (
-    <div style={{ background: '#050510', color: '#f1f5f9', minHeight: '100vh' }}>
+    <div style={{ background: '#0d0d20', color: '#f1f5f9', minHeight: '100vh' }}>
       <Navbar />
       <AnimatePresence mode="wait">
         <motion.div
@@ -21,6 +21,7 @@ export function Layout() {
         </motion.div>
       </AnimatePresence>
       <Footer />
+      <ScrollRestoration />
     </div>
   );
 }
