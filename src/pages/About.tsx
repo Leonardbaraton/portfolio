@@ -109,7 +109,7 @@ export function About() {
               periodColor: 'text-cyan-400',
               title: 'Spotme',
               items: [
-                "Application mobile communautaire pour sportifs, permettant de trouver des partenaires d'entraînement dans sa salle de sport",
+                "Application mobile communautaire pour sportifs, permettant de trouver des partenaires d'entraînement dans leurs salle de sport",
               ],
             }
           ].map((entry, i) => (
