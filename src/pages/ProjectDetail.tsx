@@ -198,7 +198,7 @@ export function ProjectSpotme() {
     </div>
   );
 }
-function BrowserMockup({ src, alt, maxWidth, maxHeight }: { src: string; alt: string; maxWidth?: number; maxHeight?: number }) {
+function BrowserMockup({ src, alt, maxWidth, maxHeight, objectPosition = 'top' }: { src: string; alt: string; maxWidth?: number; maxHeight?: number; objectPosition?: string }) {
   return (
     <div className="relative" style={maxWidth ? { maxWidth } : undefined}>
       <div
@@ -226,7 +226,7 @@ function BrowserMockup({ src, alt, maxWidth, maxHeight }: { src: string; alt: st
           <span className="w-2.5 h-2.5 rounded-full bg-yellow-500/50" />
           <span className="w-2.5 h-2.5 rounded-full bg-green-500/50" />
         </div>
-        <img src={src} alt={alt} className="w-full object-cover object-top" style={maxHeight ? { maxHeight } : undefined} />
+        <img src={src} alt={alt} className="w-full object-cover" style={{ objectPosition, ...(maxHeight ? { maxHeight } : {}) }} />
       </div>
     </div>
   );
@@ -513,6 +513,7 @@ const AREA_FEATURES = [
     reverse: false,
     maxWidth: 360 as number | undefined,
     maxHeight: 333 as number | undefined,
+    objectPosition: 'center' as string | undefined,
   },
   {
     tag: 'Connecteurs',
@@ -597,7 +598,7 @@ export function ProjectArea() {
                 transition={{ duration: 0.8, ease: 'easeOut' }}
                 className="w-full lg:w-1/2 flex-shrink-0"
               >
-                <BrowserMockup src={feat.image} alt={feat.tag} maxWidth={feat.maxWidth} maxHeight={feat.maxHeight} />
+                <BrowserMockup src={feat.image} alt={feat.tag} maxWidth={feat.maxWidth} maxHeight={feat.maxHeight} objectPosition={feat.objectPosition} />
               </motion.div>
 
               <motion.div
