@@ -12,10 +12,16 @@ const GRADIENT_TEXT: React.CSSProperties = {
 };
 
 const SKILLS = {
-  Langages: { items: ['C / C++20', 'JavaScript', 'TypeScript', 'Python', 'HTML / CSS'], color: 'indigo' as const },
-  Frameworks: { items: ['React', 'FastAPI', 'Node.js'], color: 'cyan' as const },
+  Langages: {
+    items: ['TypeScript', 'JavaScript', 'Python', 'C / C++20', 'HTML / CSS', 'SQL'],
+    color: 'indigo' as const,
+  },
+  Frameworks: {
+    items: ['React', 'React Native', 'Next.js', 'FastAPI', 'Node.js', 'Express', 'Tailwind CSS'],
+    color: 'cyan' as const,
+  },
   Outils: {
-    items: ['Git / GitHub', 'Docker', 'PostgreSQL', 'CI/CD GitHub Actions', 'Linux'],
+    items: ['Git / GitHub', 'Docker', 'PostgreSQL', 'Supabase', 'CI/CD GitHub Actions', 'Vercel', 'Linux', 'Figma'],
     color: 'default' as const,
   },
 };
@@ -47,28 +53,35 @@ export function About() {
           production. Je fais aussi des refontes de sites web, des automatisations pour rendre les entreprises plus efficaces et des sites d'ecommerce.
         </p>
         <p className="text-slate-400 leading-relaxed">
-          Développeur freelance | Sites vitrine, e-commerce & applications sur-mesure
-          <br />
-          <br />
-          Développeur full-stack formé à Epitech, classée 1ère école du digital et du numérique en France (Le Figaro Étudiant, 2026), je conçois et livre des sites vitrine, boutiques e-commerce et applications sur-mesure pour indépendants, associations et PME.
-          <br />
-          <br />
-          Ce que je fais concrètement :
-          <br />
-          <br />
-          ✅ Sites vitrine responsive et optimisés SEO
-          <br />
-          ✅ Boutiques e-commerce (Shopify, WooCommerce ou sur-mesure)
-          <br />
-          ✅ Applications web et MVP pour startups
-          <br />
-          ✅ Automatisations et outils métier sur-mesure
-          <br />
-          <br />
-          J'ai développé et lancé mes propres produits SaaS (SpotMe, une app mobile pour trouver des partenaires de sport, et Guestly, un outil de gestion d'événements pour associations) — je sais donc penser un projet comme un vrai produit, pas juste comme une liste de specs à cocher.
-          <br />
-          <br />
-          Réactif, à l'écoute, et transparent sur les délais. Premier échange gratuit pour cadrer votre besoin.
+          Formé à Epitech — 1ère école du digital en France — je conçois et livre des sites
+          vitrine, boutiques e-commerce et applications sur-mesure pour indépendants,
+          associations et PME.
+        </p>
+
+        <div className="grid sm:grid-cols-2 gap-3 mt-6">
+          {[
+            'Sites vitrine responsive & SEO',
+            'Boutiques e-commerce (Shopify, sur-mesure)',
+            'Applications web & MVP',
+            'Automatisations et outils métier',
+          ].map((item) => (
+            <div
+              key={item}
+              className="flex items-center gap-2 text-sm text-slate-300"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-indigo-400 flex-shrink-0" />
+              {item}
+            </div>
+          ))}
+        </div>
+
+        <p className="text-slate-400 leading-relaxed mt-6">
+          J'ai aussi lancé mes propres produits — SpotMe (app mobile sport) et Guestly
+          (gestion d'événements) — ce qui me permet de penser chaque projet comme un vrai
+          produit, pas une liste de specs à cocher.
+        </p>
+        <p className="text-slate-500 text-sm mt-3">
+          Réactif, transparent sur les délais. Premier échange gratuit.
         </p>
       </div>
 
@@ -90,7 +103,7 @@ export function About() {
             {
               period: 'Avril 2026 - Aout 2026',
               periodColor: 'text-indigo-400',
-              title: 'Stagiaire Développeur — Epitech, Nantes',
+              title: 'Stagiaire Développeur — ONITI, Nantes',
               items: [
                 "Création d'une application web de gestion d'invités dans les évènements pour les associations",
                 'Présentation de projets, formation des collaborateurs',
